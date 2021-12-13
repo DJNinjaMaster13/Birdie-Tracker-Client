@@ -199,7 +199,7 @@ class EditScorecard extends Component {
         }
 
         //redirect the user back to the scorecard list page
-        window.location = '/scorecardlist';
+        window.location = 'https://dreamy-mcnulty-8d46e1.netlify.app/scorecardlist';
     }
 
     render() {

@@ -204,7 +204,7 @@ class CreateScorecard extends Component {
 
         }
 
-        window.location = '/scorecardlist';
+        window.location = 'https://dreamy-mcnulty-8d46e1.netlify.app/scorecardlist';
     }
 
     render() {
