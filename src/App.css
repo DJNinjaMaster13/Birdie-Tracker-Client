@@ -1,0 +1,202 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.white_background {
+  background-color: white;
+}
+
+.App-header {
+  background-color: #1e5cda;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ /* added to space out elements on the forms*/
+.form-group{margin: 5px 10px 10px 10px}
+
+.top_margin{margin: 50px 0px 0px 0px}
+
+.center_div_horz {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 3px solid black;
+}
+
+.center_div_vert {
+  display: block;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.center_text_horz_vert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading_image {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.loading {
+  height: 150px;
+  width: 300px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 3px solid blue;
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+}
+
+.center_button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  justify-content: center;
+  width: 50%;
+}
+
+/***********************************/
+.outer_container {
+  height: 750px;
+  position: relative;
+  /*border: 3px solid green;*/
+}
+
+.center_horz_vert {
+  height: 300px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid blue;
+  background-color: #ffffff;
+}
+/***********************************/
+
+.header_centered{
+  color: blue;
+  font-size: 64px;
+  font-weight: 700;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ /* for adding backgrounds to individual divs*/
+.background_stuff{
+  background-image: url("Images/BlueBackground.png");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+ /* for adding background in the main div in App.js*/
+.container{
+  background-image: url("Images/GreyBackground.png");
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+}
+
+.fancy{
+  color: blue;
+  font-size: xxx-large;
+  font-weight: 700; 
+}
+
+/*limits the textbox size on create-scorecard and create-course so they don't take up to much */
+.scorecard_elements{
+  /*border: 3px solid green;*/
+  width: 300px;
+}
+
+/*aligns score/hole textboxes on create-scorecard and create-course with other elements*/
+.score_boxes{
+  /*border: 3px solid red;*/
+  width: 300px;
+  margin-left: 10px;
+}
+
+.personal_info{
+  /*border: 3px solid red;*/
+  width: 600px;
+  height: 300px;
+}
+.statistics{
+  /*border: 3px solid green;*/
+  width: 600px;
+  height: 300px;
+}
+
+.profile_header {
+  border: 3px solid blue;
+  background-color: white;
+  width: 600px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile_message {
+  /*border: 3px solid blue;*/
+  color: blue;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.debug {
+  border: 3px solid black;
+}
