@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7fe8aa6f.chunk.css",
+    "main.js": "/static/js/main.aff8d096.chunk.js",
+    "main.js.map": "/static/js/main.aff8d096.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b5c9ab71.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b5c9ab71.js.map",
+    "static/css/2.0130d929.chunk.css": "/static/css/2.0130d929.chunk.css",
+    "static/js/2.0780cd6c.chunk.js": "/static/js/2.0780cd6c.chunk.js",
+    "static/js/2.0780cd6c.chunk.js.map": "/static/js/2.0780cd6c.chunk.js.map",
+    "static/js/3.3f385723.chunk.js": "/static/js/3.3f385723.chunk.js",
+    "static/js/3.3f385723.chunk.js.map": "/static/js/3.3f385723.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.0130d929.chunk.css.map": "/static/css/2.0130d929.chunk.css.map",
+    "static/css/main.7fe8aa6f.chunk.css.map": "/static/css/main.7fe8aa6f.chunk.css.map",
+    "static/js/2.0780cd6c.chunk.js.LICENSE.txt": "/static/js/2.0780cd6c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/GreyBackground.46643fca.png",
+    "static/media/dgbasket.d8fcc474.jpg": "/static/media/dgbasket.d8fcc474.jpg",
+    "static/media/hourglass1.06cccd29.jfif": "/static/media/hourglass1.06cccd29.jfif",
+    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5c9ab71.js",
+    "static/css/2.0130d929.chunk.css",
+    "static/js/2.0780cd6c.chunk.js",
+    "static/css/main.7fe8aa6f.chunk.css",
+    "static/js/main.aff8d096.chunk.js"
+  ]
+}
