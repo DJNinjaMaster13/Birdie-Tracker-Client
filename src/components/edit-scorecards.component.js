@@ -37,7 +37,7 @@ class EditScorecard extends Component {
       if (this.state.isAuth) {
 
         //load in user data 
-        axios.get('http://localhost:5000/users/')
+        axios.get('https://birdie-tracker.herokuapp.com/users/')
         .then(response => {
           if (response.data.length > 0) {
 
@@ -61,7 +61,7 @@ class EditScorecard extends Component {
         })
 
        //load in scorecard data from selected scorecard
-        axios.get('http://localhost:5000/scorecards/'+this.props.match.params.id)
+        axios.get('https://birdie-tracker.herokuapp.com/scorecards/'+this.props.match.params.id)
         .then(response => {
             this.setState({
                 username: response.data.username,
@@ -77,7 +77,7 @@ class EditScorecard extends Component {
         })
 
         //load in course data for dropdown select
-        axios.get('http://localhost:5000/courses/')
+        axios.get('https://birdie-tracker.herokuapp.com/courses/')
         .then(response => {
           if (response.data.length > 0) {
             this.setState(state => ({...state,
@@ -158,7 +158,7 @@ class EditScorecard extends Component {
           }
 
           //save the updated scorecard to the database
-          axios.post('http://localhost:5000/scorecards/update/'+this.props.match.params.id, scorecard)
+          axios.post('https://birdie-tracker.herokuapp.com/scorecards/update/'+this.props.match.params.id, scorecard)
           .then(res => console.log(res.data))
           .catch((error) => {
             console.log(error);
@@ -190,7 +190,7 @@ class EditScorecard extends Component {
           console.log(user);
           
           //update the user object in the database
-          axios.post('http://localhost:5000/users/update/'+this.state.userAccount._id, user)
+          axios.post('https://birdie-tracker.herokuapp.com/users/update/'+this.state.userAccount._id, user)
           .then(res => console.log(res.data))
           .catch((error) => {
             console.log(error);

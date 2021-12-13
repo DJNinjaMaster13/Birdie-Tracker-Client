@@ -33,7 +33,7 @@ class ScorecardList extends Component {
     componentDidMount() {
 
         //get the scorecard data from the server
-        axios.get('http://localhost:5000/scorecards/')
+        axios.get('https://birdie-tracker.herokuapp.com/scorecards/')
         .then(response => {
             this.setState({ scorecards: response.data})
         })
@@ -45,7 +45,7 @@ class ScorecardList extends Component {
     //sends a delete request to the server and then filters
     //the array to remove the deleted scorecard
     deleteScorecard(id) {
-        axios.delete('http://localhost:5000/scorecards/' + id)
+        axios.delete('https://birdie-tracker.herokuapp.com/scorecards/' + id)
         .then(res => console.log(res.data));
 
         this.setState({

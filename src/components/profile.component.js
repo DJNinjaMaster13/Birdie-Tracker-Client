@@ -15,7 +15,7 @@ const Profile = () => {
         if (!matched && isAuthenticated) {
             const {nickname} = user;
             //load in user data 
-            axios.get('http://localhost:5000/users/')
+            axios.get('https://birdie-tracker.herokuapp.com/users/')
             .then(response => {
                 let player_found = false;
                 if (response.data.length > 0) {
@@ -43,7 +43,7 @@ const Profile = () => {
                         }
                         setPlayer(user);
             
-                        axios.post('http://localhost:5000/users/add', user)
+                        axios.post('https://birdie-tracker.herokuapp.com/users/add', user)
                         .then(res => console.log(res.data));
                         player_found = true;
                     }
@@ -62,7 +62,7 @@ const Profile = () => {
                     }
                     setPlayer(user);
         
-                    axios.post('http://localhost:5000/users/add', user)
+                    axios.post('https://birdie-tracker.herokuapp.com/users/add', user)
                     .then(res => console.log(res.data));
                     player_found = true;
                 }
@@ -91,7 +91,7 @@ const Profile = () => {
             console.log(user);
             
             //update the user object in the database
-            axios.post('http://localhost:5000/users/update/'+player._id, user)
+            axios.post('https://birdie-tracker.herokuapp.com/users/update/'+player._id, user)
             .then(res => console.log(res.data))
             .catch((error) => {
               console.log(error);

@@ -110,7 +110,7 @@ class CreateCourse extends Component {
             }
             
             //post the course to the database
-            axios.post('http://localhost:5000/courses/add', course)
+            axios.post('https://birdie-tracker.herokuapp.com/courses/add', course)
             .then(res => console.log(res.data));
         
             //redirect back to the course list page

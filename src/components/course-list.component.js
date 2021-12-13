@@ -39,7 +39,7 @@ export default class CourseList extends Component {
     componentDidMount() {
 
         //get course data from database
-        axios.get('http://localhost:5000/courses/')
+        axios.get('https://birdie-tracker.herokuapp.com/courses/')
         .then(response => {
             this.setState({ courses: response.data})
         })
@@ -51,7 +51,7 @@ export default class CourseList extends Component {
     //sends a delete request to the database
     //and then filters the deleted course from the array
     deleteCourse(id) {
-        axios.delete('http://localhost:5000/courses/' + id)
+        axios.delete('https://birdie-tracker.herokuapp.com/courses/' + id)
         .then(res => console.log(res.data));
 
         this.setState({

@@ -26,7 +26,7 @@ export default class EditCourse extends Component {
     componentDidMount() {
 
         //get currrent course data to populate state variables
-        axios.get('http://localhost:5000/courses/'+this.props.match.params.id)
+        axios.get('https://birdie-tracker.herokuapp.com/courses/'+this.props.match.params.id)
         .then(response => {
             this.setState({
                 name: response.data.name,
@@ -100,7 +100,7 @@ export default class EditCourse extends Component {
                 par: this.state.par 
             }
     
-            axios.post('http://localhost:5000/courses/update/'+this.props.match.params.id, course)
+            axios.post('https://birdie-tracker.herokuapp.com/courses/update/'+this.props.match.params.id, course)
             .then(res => console.log(res.data))
             .catch((error) => {
               console.log(error);
