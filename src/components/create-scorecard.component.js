@@ -203,8 +203,8 @@ class CreateScorecard extends Component {
           })
 
         }
-        //took this out for testing
-        //window.location = 'https://dreamy-mcnulty-8d46e1.netlify.app/scorecardlist';
+        
+        window.location = 'https://birdie-tracker.netlify.app/scorecardlist';
     }
 
     render() {

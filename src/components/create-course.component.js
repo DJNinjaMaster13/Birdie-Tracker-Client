@@ -114,7 +114,7 @@ class CreateCourse extends Component {
             .then(res => console.log(res.data));
         
             //redirect back to the course list page
-            window.location = 'https://dreamy-mcnulty-8d46e1.netlify.app/courselist';
+            window.location = 'https://birdie-tracker.netlify.app/courselist';
         });
 
     }

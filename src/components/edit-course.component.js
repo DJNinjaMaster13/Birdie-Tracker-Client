@@ -107,7 +107,7 @@ export default class EditCourse extends Component {
             })
     
             //redirect the user back to the course list page
-            window.location = 'https://dreamy-mcnulty-8d46e1.netlify.app/courselist';
+            window.location = 'https://birdie-tracker.netlify.app/courselist';
         });
     }
 
