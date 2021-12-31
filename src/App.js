@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -7,7 +6,6 @@ import React, {useState, useEffect} from 'react';
 import ScorecardsList from "./components/scorecards-list.component";
 import EditScorecards from "./components/edit-scorecards.component";
 import CreateScorecard from "./components/create-scorecard.component";
-import CreateUser from "./components/create-user.component";
 import CreateCourse from "./components/create-course.component";
 import CourseList from "./components/course-list.component";
 import EditCourse from "./components/edit-course.component";
@@ -16,9 +14,6 @@ import Navbar2 from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Profile from "./components/profile.component";
 import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
-import {useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
-import ProtectedRoute from "./auth/protected-route";
-import Loading from "./components/loading-component";
 
 function App() {
 

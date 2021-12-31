@@ -1,7 +1,5 @@
 import React, { Component} from 'react';
-import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-import {useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import axios from 'axios';
 import { withAuth0 } from '@auth0/auth0-react';
 import LoginMessage from "./login-message.component";
@@ -22,34 +20,21 @@ class CreateCourse extends Component {
 
         const { isAuthenticated } = this.props.auth0;
 
-        if (isAuthenticated) {
-          const { user } = this.props.auth0;
-          const {nickname, email} = user;
-          this.state = {
+        this.state = {
             name: '',
             location: '',
             holes: [],
             par: 0,
             isAuth: isAuthenticated
-            }
         }
-
-        else {
-            this.state = {
-                name: '',
-                location: '',
-                holes: [],
-                par: 0,
-                isAuth: false
-            }
-        }
+        
     }
 
     componentDidMount() {
         
     }
 
-    //triggered by the user changing the username in the select field
+    //triggered by the user changing the course name in the select field
     onChangeName(e) {
         this.setState({
             name: e.target.value

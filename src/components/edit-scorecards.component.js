@@ -24,7 +24,6 @@ class EditScorecard extends Component {
           par: 0,
           scores: [],
           date: new Date(),
-          users: [],
           courses: [],
           isAuth: isAuthenticated,
           userAccount: null,
@@ -179,15 +178,12 @@ class EditScorecard extends Component {
             new_worst = score;
           }
           
-
           const user = {
             username: this.state.userAccount.username,
             rounds_played: this.state.userAccount.rounds_played,
             best_score: new_best,
             worst_score: new_worst,
           }
-  
-          console.log(user);
           
           //update the user object in the database
           axios.post('https://birdie-tracker.herokuapp.com/users/update/'+this.state.userAccount._id, user)

@@ -104,9 +104,7 @@ const Profile = () => {
     }
 
     if (isAuthenticated) {
-        const {nickname, email, last_login} = user;
-
-        const test = matched;
+        const {nickname, email} = user;
         
         return (
             <div>

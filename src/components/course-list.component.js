@@ -15,17 +15,6 @@ const Course = props => (
     </tr>
 )
 
-//test function that maps an array of holes
-//into html to be displayed on the screen
-//saving this for later to be used in the "view course" pages
-const Test = ({holes}) => (
-  <> 
-    {holes.map(hole => (
-      <div className="hole" key={hole._id}>{hole.par}</div>
-    ))}
-  </>
-)
-
 export default class CourseList extends Component {
 
     constructor(props) {

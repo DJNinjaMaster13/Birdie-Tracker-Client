@@ -23,7 +23,6 @@ class ScorecardList extends Component {
 
     constructor(props) {
         super(props);
-
        
         this.state = {scorecards: []};
         this.deleteScorecard = this.deleteScorecard.bind(this);
